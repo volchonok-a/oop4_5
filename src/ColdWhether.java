@@ -1,4 +1,4 @@
-public abstract class ColdWhether implements Whether {
+public abstract class ColdWhether implements WhetherInt {
     private double winter;
     boolean run;
 
@@ -29,6 +29,11 @@ public abstract class ColdWhether implements Whether {
 
     public void setRun(boolean run) {
         this.run = run;
+    }
+
+    @Override
+    public void info() {
+        System.out.println("Давление в норме");
     }
 
 }

@@ -22,5 +22,9 @@ public class HotWhetherExt extends HotWhether{
                 ", cloud=" + cloud +
                 '}';
     }
-    
+
+    @Override
+    public void info() {
+        System.out.println("Давление не в норме");
+    }
 }

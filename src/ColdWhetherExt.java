@@ -24,4 +24,8 @@ public class ColdWhetherExt extends ColdWhether{
     }
 
 
+    @Override
+    public void info() {
+        System.out.println("Давление в норме");
+    }
 }

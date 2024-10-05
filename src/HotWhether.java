@@ -1,4 +1,4 @@
-public abstract class HotWhether implements Whether {
+public abstract class HotWhether implements WhetherInt {
     private int ultravioletLight;
     boolean cloud;
 
@@ -29,5 +29,9 @@ public abstract class HotWhether implements Whether {
 
     public boolean isCloud() {
         return cloud;
+    }
+    @Override
+    public void info() {
+        System.out.println("Давление не в норме");
     }
 }

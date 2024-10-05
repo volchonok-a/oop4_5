@@ -3,9 +3,8 @@ public class Area {
     private double width;
     private double longitude;
     private AreaEnum area;
-    private Whether whether;
-
-    public Area(double width, double longitude, AreaEnum area, Whether whether) {
+    private WhetherInt whether;
+    public Area(double width, double longitude, AreaEnum area, WhetherInt whether) {
         this.width = width;
         this.longitude = longitude;
         this.area = area;
@@ -23,7 +22,7 @@ public class Area {
         return area;
     }
 
-    public Whether getWhether() {
+    public WhetherInt getWhether() {
         return whether;
     }
 
@@ -42,7 +41,7 @@ public class Area {
         this.area = area;
     }
 
-    public void setWhether(Whether whether) {
+    public void setWhether(WhetherInt whether) {
         this.whether = whether;
     }
 
